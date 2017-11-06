@@ -1,0 +1,269 @@
+html{
+    font-family: 'Amatic SC', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("nothing.png");
+    background-color: #cccccc
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5{
+    color: #696969;    
+}
+
+section{
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+/*----------------------------------------- Header ----------------------------------------------------------*/
+
+header{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+nav{
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    width: 200px;
+    height: 50px;
+    cursor:pointer;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    transition:  3ms linear;
+}
+
+nav ul li:hover{
+    background-color:#252525;
+}
+
+nav ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+/**************************** Sections ***********************************/
+
+
+
+.image-section{
+    display: block;
+    width:100%;
+}
+
+#iphone-x-section{
+    margin: 0;
+    background-color: #fafcfb;
+}
+
+#iphone-8-section{
+    margin: 0;
+    background-color: #fafafa;
+}
+
+#iphx-img{
+    background: url("nothingbg.png");
+    background-size: cover;
+    background-position: center;
+    min-height:800px;
+}
+
+#iph8-img{
+    background: url("nothing.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height:1000px;
+}
+
+.section-title{
+    font-size: 2em;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#iphone-x-section .section-info{
+    margin-top:-200px;
+}
+.section-title h2,.section-title h3{
+    margin: 0;
+}
+.section-title h3{
+    font-size:0.9em;
+}
+
+.section-text{
+    width: 50%;
+    margin:50px auto;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
+
+/************************************* Article **********************************/
+
+article{
+    font-size: 1.2em;
+}
+
+
+/************************************** Table Styling ***************************/
+
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 980px;
+}
+th{
+    font-size: 1.5em;
+}
+tr{
+    border-bottom:1px solid #c5c5c5;
+}
+
+table tr:last-child{
+    border: none;
+}
+
+td{
+    padding:40px 0px;
+    display: inline-block;
+    margin-right: 30%;
+    
+}
+
+td ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#spec-table td,#spec-table th{
+    width: 50%;
+}
+/******************************* Other ***********************************************/
+
+div.product-details h2{
+    font-size: 2em;
+    margin: 100px 0px;
+    text-align: center;
+}
+
+.slide-button{
+    font-size: 1.5em;
+    text-align: center;
+    width: 250px;
+    padding: 15px 0px;
+    border-radius: 50px;
+    font-weight: bold;
+    margin: 0 auto 20px auto;
+    cursor: pointer;
+    color: #027fbd;
+    border: 2px solid #027fbd;
+    transition: all .1s ease-in-out;
+}
+.slide-button:hover{
+    transform: scale(.98);
+}
+
+.slide {
+    display: block;
+    overflow: hidden;
+    transition: all 0.5s linear;
+}
+
+.slide-img{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 1s linear;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+
+.slide-img:nth-child(1){
+    background: url("img/bg1.jpg");
+}
+.slide-img:nth-child(2){
+    background: url("img/bg2.png");
+}
+.slide-img:nth-child(3){
+    background: url("img/bg3.jpg");
+}
+.slide-img:nth-child(4){
+    background: url("img/bg4.jpg");
+}
+
+/******************************************************SUB MENU******************************************************/
+
+.has-dropdown:hover .sub-menu{
+    display:flex;
+}
+
+.has-dropdown:hover .arrow-head{
+    transform:rotateZ(-90deg);
+}
+
+.sub-menu{
+    display:none;
+    background:black;
+    flex-direction:column;
+    color: white;
+    position: absolute;
+    top: 50px;
+    width: 200px;
+}
+
+.sub-menu > li{
+    display:flex;
+    align-content:center;
+    align-items:center;
+    border-bottom:1px solid #3b3b3bcc;
+}
+
+.sub-menu > li:last-child{
+    border-bottom:none;
+}
+
+.arrow-head{
+    transform-origin:center;
+    transition:transform .2s linear;
+    margin-left:20px;
+    color:white;
+    font-size:0.8em;
+}
